@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 12:45:45 by claprand          #+#    #+#             */
-/*   Updated: 2024/04/22 17:08:25 by claprand         ###   ########.fr       */
+/*   Updated: 2024/04/22 17:20:35 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int	ft_print_p(void *ptr, int *len)
 	digits = "0123456789abcdef";
 	if (!address)
 	{
-		write (1, "(nil)", 5);
-		*len = 5;
+		ft_putchar_fd('0', 1);
+		(*len)++;
 		return (*len);
 	}
 	if (address >= 16)
