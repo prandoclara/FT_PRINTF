@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 10:14:50 by claprand          #+#    #+#             */
-/*   Updated: 2024/04/25 20:53:33 by claprand         ###   ########.fr       */
+/*   Updated: 2024/04/25 21:02:37 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,98 +60,4 @@ int	ft_printf(const char *s, ...)
 	}
 	va_end(arg);
 	return (len);
-}
-
-#include <limits.h>
-int main()
-{   
-    int addr = -1;
-    
-    int res = printf(" %p ", &addr);
-    printf("\n");
-    int res2 = ft_printf(" %p ", &addr);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res, res2);
-    printf("\n");
-    printf("\n");
-
-    int addr1 = 1;
-    
-    int res3 = printf(" %p ", &addr1);
-    printf("\n");
-    int res4 = ft_printf(" %p ", &addr1);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res3, res4);
-    printf("\n");
-    printf("\n");
-
-
-    int addr2 = 15;
-    
-    int res5 = printf(" %p ", &addr2);
-    printf("\n");
-    int res6 = ft_printf(" %p ", &addr2);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res5, res6);
-    printf("\n");
-    printf("\n");
-    
-    int addr3 = 16;
-    
-    int res7 = printf(" %p ", &addr3);
-    printf("\n");
-    int res8 = ft_printf(" %p ", &addr3);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res7, res8);
-    printf("\n");
-    printf("\n");
-    
-    int addr4 = 17;
-    
-    int res9 = printf(" %p ", &addr4);
-    printf("\n");
-    int res10 = ft_printf(" %p ", &addr4);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res9, res10);
-    printf("\n");
-    printf("\n");
-    
-    long long addr5 = LONG_MIN;
-    unsigned long long addr6 = LONG_MAX;
-    int res11 = printf(" %p %p ", &addr5, &addr6);
-    printf("\n");
-    int res12 = ft_printf(" %p %p ", &addr4, &addr5);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res11, res12);
-    printf("\n");
-    printf("\n");
-    
-    int addr7 = INT_MIN;
-    int addr8 = INT_MAX;
-    int res13 = printf(" %p %p ", &addr7, &addr8);
-    printf("\n");
-    int res14 = ft_printf(" %p %p ", &addr7, &addr8);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res13, res14);
-    printf("\n");
-    printf("\n");
-    
-
-    unsigned long long addr9 = ULONG_MAX;
-    long long addr10 = -ULONG_MAX;
-    int res15 = printf(" %p %p ", &addr9, &addr10);
-    printf("\n");
-    int res16 = ft_printf(" %p %p ", &addr9, &addr10);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res15, res16);
-    printf("\n");
-    printf("\n");
-    
-    int res17 = printf(" %d %d ", 0, 0);
-    printf("\n");
-    int res18 = ft_printf(" %p %p ", 0, 0);
-    printf("\n");
-    printf("pf : %d VS mypf : %d", res17, res18);
-    printf("\n");
-    printf("\n");
 }
