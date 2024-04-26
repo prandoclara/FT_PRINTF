@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 14:54:21 by claprand          #+#    #+#             */
-/*   Updated: 2024/04/22 15:21:13 by claprand         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:56:34 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ int	ft_ui_len(unsigned int n)
 	int	len;
 
 	len = 0;
-    if (n == 0)
-    {
-        len++;
-    }
+	if (n == 0)
+	{
+		len++;
+	}
 	while (n > 0)
 	{
 		len++;

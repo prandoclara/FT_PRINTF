@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 12:45:45 by claprand          #+#    #+#             */
-/*   Updated: 2024/04/25 20:54:41 by claprand         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:56:14 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,3 @@ int	ft_print_pp(void *ptr, int *len)
 	write(1, "0x", 2);
 	return (ft_print_p(ptr, len) + 2);
 }
-

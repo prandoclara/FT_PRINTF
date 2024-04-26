@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 10:14:50 by claprand          #+#    #+#             */
-/*   Updated: 2024/04/25 21:02:37 by claprand         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:56:07 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,11 @@ int	ft_print_conversion(va_list	*arg, char *s, int i)
 	else if (s[i] == 'X')
 		len = ft_printux((unsigned int)va_arg(*arg, unsigned int), s[i], &len);
 	else if (s[i] == 'p')
-	{
 		len = ft_print_pp((void *)va_arg(*arg, void *), &len);
-	}
 	else if (s[i] == 'u')
 		len = ft_print_u((unsigned int)va_arg(*arg, unsigned int));
 	else if (s[i] == '%')
-		len = ft_print_percent((int)va_arg(*arg, int));
+		len = ft_print_percent('%');
 	return (len);
 }
 

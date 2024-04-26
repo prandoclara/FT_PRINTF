@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 10:14:54 by claprand          #+#    #+#             */
-/*   Updated: 2024/04/25 20:53:25 by claprand         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:57:04 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ int	ft_print_u(unsigned int n);
 int	ft_printux(unsigned int x, char c, int *len);
 int	ft_print_pp(void *ptr, int *len);
 int	ft_print_percent(char c);
-int ft_ui_len(unsigned int n);
+int	ft_ui_len(unsigned int n);
 
 #endif 
